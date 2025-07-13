@@ -9,7 +9,7 @@ const Logo = () => {
             <img 
             src="/logos/logo.png" 
             alt="RCCG Logo Part 1" 
-            className="h-20 w-auto"
+            className="h-12 w-auto"
             />
             </div>
          </Link>
