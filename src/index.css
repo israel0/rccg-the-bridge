@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap'); */
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+
+  @keyframes phrase-slide {
+  0%, 25% {
+    transform: translateY(0%);
+  }
+  33%, 58% {
+    transform: translateY(-100%);
+  }
+  66%, 91% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate-phrase-slide {
+  animation: phrase-slide 7.5s ease-in-out infinite;
+}
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  /* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Slide-in animation */
+@keyframes slide-in {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-slide-in {
+  opacity: 0;
+  animation: slide-in 0.7s ease-out forwards;
+}
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-orange text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors duration-200 flex items-center gap-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-primary-gray px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors duration-200 flex items-center gap-2;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}

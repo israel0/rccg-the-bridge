@@ -1,0 +1,38 @@
+/* Fade in the text */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* Staggered image fade-in */
+.img-animate {
+  animation: fadeIn 0.3s ease forwards;
+  animation-delay: calc(var(--i) * 0.4s);
+  transition: transform 1s ease;
+}
+
+/* Scattering positions */
+.img-animate[data-scattered="true"]:nth-child(1) {
+  transform: translate(-400px, -100px);
+  opacity: 1;
+}
+.img-animate[data-scattered="true"]:nth-child(2) {
+  transform: translate(-400px, 100px);
+  opacity: 1;
+}
+.img-animate[data-scattered="true"]:nth-child(3) {
+  transform: translate(400px, -100px);
+  opacity: 1;
+}
+.img-animate[data-scattered="true"]:nth-child(4) {
+  transform: translate(400px, 100px);
+  opacity: 1;
+}
