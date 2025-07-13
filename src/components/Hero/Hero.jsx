@@ -31,7 +31,7 @@ const Hero = () => {
           alt="Hero Background" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/90 to-primary-orange/20" />
+        <div className="absolute inset-0 bg-gradient-black" />
       </div>
 
        <div className="relative z-10 container-max section-padding">
