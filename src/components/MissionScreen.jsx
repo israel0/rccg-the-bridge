@@ -45,7 +45,7 @@ export default function OverlayScrollSection() {
                 <button to="/department" className="btn-primary" >
                    Go to counselling
                 <img 
-                src="https://static.codia.ai/custom_image/2025-06-29/070305/arrow-icon-9.svg" 
+                src="/icons/arrow-icon-9.svg" 
                 alt="Arrow" 
                 className="w-4 h-3"
                 />

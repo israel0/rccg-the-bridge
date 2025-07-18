@@ -5,7 +5,7 @@ const Counselling = () => {
     <section className="relative py-32 overflow-hidden">
       <div className="absolute inset-0">
         <img 
-          src="https://static.codia.ai/custom_image/2025-06-29/070305/hero-background-1.png" 
+          src="/icons/hero-background-1.png" 
           alt="Counselling Background" 
           className="w-full h-full object-cover"
         />
@@ -27,7 +27,7 @@ const Counselling = () => {
             <button className="btn-primary">
               Go to counselling
               <img 
-                src="https://static.codia.ai/custom_image/2025-06-29/070305/arrow-icon-9.svg" 
+                src="/icons/arrow-icon-9.svg" 
                 alt="Arrow" 
                 className="w-4 h-3"
               />

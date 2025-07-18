@@ -37,7 +37,6 @@ export default function OurHistory() {
       {/* Header */}
       <h2 className="text-4xl font-bold text-center mb-16">Our History</h2>
 
-      {/* Timeline Navigation with Connecting Line */}
       <div className="relative mb-16">
         <div className="absolute top-1/2 w-full h-1 bg-gray-300 transform -translate-y-1/2"></div>
         <div className="flex justify-between relative z-10">
@@ -45,11 +44,11 @@ export default function OurHistory() {
             <button
               key={item.id}
               onClick={() => setSelected(item.id)}
-              className={`w-12 h-12 rounded-full z-10 text-lg font-bold flex items-center justify-center transition-all duration-300
+              className={`w-20 h-20 rounded-full z-10 text-lg font-bold flex items-center justify-center transition-all duration-300
                 ${
                   selected === item.id
                     ? "bg-orange-500 text-white scale-110"
-                    : "bg-white border-2 border-gray-400 text-gray-700"
+                    : "bg-white border-2 border-gray-400 text-black"
                 }`}
             >
               {item.id}
@@ -58,17 +57,20 @@ export default function OurHistory() {
         </div>
       </div>
 
-      {/* Content Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-        {/* Text Side */}
-        <div className="flex flex-col md:flex-row md:items-start space-y-4 lg:space-y-0">
-          <div className="md:w-1/4 font-semibold text-3xl text-gray-800 mb-2 md:mb-0">
-            {current.title}
-          </div> <br />
-          <div className="md:w-3/4 text-3xl text-gray-700">{current.text}</div>
-        </div>
+      <div className="flex flex-col md:flex-row md:items-start space-y-4 lg:space-y-0">
+      <div className="text-left mb-4">
+      <div className="font-semibold text-3xl text-gray-800 mb-2">
+      {current.title}
+      </div>
+      <div className="text-xl text-black">
+      {current.text}
+      </div>
+      </div>
+      </div>
+    
 
-        {/* Image Side */}
+
         <div className="h-full flex items-center justify-center">
           <img
             src={current.image}

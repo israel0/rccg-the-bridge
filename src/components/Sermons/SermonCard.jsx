@@ -30,7 +30,7 @@ const SermonCard = ({ sermon }) => {
                  <span className="text-primary-orange text-xl">Watch live</span>
             <div className="w-6 h-6 flex items-center justify-center">
               <img 
-                src="https://static.codia.ai/custom_image/2025-06-29/070305/arrow-icon-9.svg" 
+                src="/icons/arrow-icon-9.svg" 
                 alt="Arrow" 
                 className="w-4 h-3"
               />

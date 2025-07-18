@@ -125,7 +125,7 @@ export default function Department() {
 
                 {openAccordion === index && (
                   <div className="p-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <ul className="list-disc list-inside text-gray-700 space-y-2">
+                    <ul className="list-disc list-inside text-black space-y-2">
                       {dept.description.map((point, i) => (
                         <li key={i}>{point}</li>
                       ))}

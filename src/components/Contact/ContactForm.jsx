@@ -55,7 +55,7 @@ const ContactForm = () => {
       <button type="submit" className="btn-primary">
         Send
         <img 
-          src="https://static.codia.ai/custom_image/2025-06-29/070305/arrow-icon-11.svg" 
+          src="/icons/arrow-icon-11.svg" 
           alt="Arrow" 
           className="w-4 h-3"
         />

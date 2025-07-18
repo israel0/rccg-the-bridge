@@ -9,14 +9,15 @@ import AnimatedSection from '../components/About/OurHistory'
 // src/pages/About.js
 export default function About() {
   return (
-       <main>
+       <div>
             <div>
 
-<section class="container-max section-padding">
-  <div
+<section class="bg-white">
+  <div class="container-max section-padding">
+        <div
     class=" flex items-center justify-center px-3 lg:px-10 py-[3rem]  pattern max-w-[1480px] mx-auto"
   >
-    <div class="basis-1/4 hidden lg:flex justify-center rounded">
+    <div class="basis-1/2 hidden lg:flex justify-center rounded">
       <img src="department/1.png" alt="" class="rounded-md" />
     </div>
     <div
@@ -24,12 +25,10 @@ export default function About() {
     >
       
     </div>
-    <div class="basis-1/5 hidden lg:flex justify-center rounded">
+    <div class="basis-1/2 hidden lg:flex justify-center rounded">
       <img src="department/2.png" alt="" class="rounded-md" />
     </div>
   </div>
-
-
 
   <div
     class=" flex items-center justify-center"
@@ -45,7 +44,7 @@ export default function About() {
   <div
     class=" flex items-center justify-center px-3 lg:px-10 py-[5rem] pattern max-w-[1480px] mx-auto"
   >
-    <div class="basis-1/5 hidden lg:flex justify-center rounded">
+    <div class="basis-1/2 hidden lg:flex justify-center rounded">
       <img src="department/3.png" alt="" class="rounded-md" />
     </div>
     <div
@@ -54,20 +53,20 @@ export default function About() {
       
       
     </div>
-    <div class="basis-1/4 hidden lg:flex justify-center rounded">
+    <div class="basis-1/2 hidden lg:flex justify-center rounded">
       <img src="department/4.png" alt="" class="rounded-md" />
     </div>
   </div>
 
   <div
-    class="grid grid-cols-1 lg:grid-cols-2 place-content-center gap-6 px-6 lg:px-20 py-[5rem] pattern max-w-[1480px] mx-auto animate__animated animate__zoomIn"
+    class=" grid grid-cols-1 lg:grid-cols-2 place-content-center gap-6 px-6 lg:px-20 py-[5rem] pattern max-w-[1480px] mx-auto animate__animated animate__zoomIn"
   >
     <div class="space-y-8">
       <div class="flex flex-col md:flex-row md:items-start">
         <div class="md:w-1/4 font-semibold text-xl text-gray-800 mb-2 md:mb-0">
           Our Mission
         </div>
-        <div class="md:w-3/4 text-2xl text-gray-700">
+        <div class="md:w-3/4 text-2xl text-black">
           To raise a generation that bridges gaps in society by redirecting hearts back to God.
         </div>
       </div>
@@ -78,7 +77,7 @@ export default function About() {
         <div class="md:w-1/4 font-semibold text-xl text-gray-800 mb-2 md:mb-0">
           Our Vision
         </div>
-        <div class="md:w-3/4 text-2xl text-gray-700">
+        <div class="md:w-3/4 text-2xl text-black">
           A thriving community of servant-leaders influencing every sphere—business, arts, government, technology—for His glory.
         </div>
       </div>
@@ -88,18 +87,15 @@ export default function About() {
       <img src="/gallery/bridge1.png" alt="Bridge" class="max- h-auto" />
     </div>
   </div>
+    </div>
 </section>
 
-
 <OurHistory/>
-
 <Leadership/>
-
 <Department/>
-
 <MissionScreen />
 
      </div>
-       </main>
+       </div>
   )
 }

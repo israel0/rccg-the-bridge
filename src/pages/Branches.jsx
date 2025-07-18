@@ -37,7 +37,7 @@ export default function Branches() {
             ].map((card, index) => (
               <div
                 key={index}
-                className="rounded-lg bg-white text-gray-700 p-5 shadow hover:bg-orange-600 hover:text-white transition-all duration-300"
+                className="rounded-lg bg-white text-black p-5 shadow hover:bg-orange-600 hover:text-white transition-all duration-300"
               >
                 <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
                 <ul className="list-disc list-inside text-sm space-y-1">

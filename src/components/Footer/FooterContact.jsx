@@ -3,30 +3,30 @@ import React from 'react'
 const FooterContact = () => {
   const contactInfo = [
     {
-      icon: 'https://static.codia.ai/custom_image/2025-06-29/070305/phone-icon.svg',
+      icon: '/icons/phone-icon.svg',
       text: '234-913-422-2220'
     },
     {
-      icon: 'https://static.codia.ai/custom_image/2025-06-29/070305/email-icon.svg',
+      icon: '/icons/email-icon.svg',
       text: 'admin@rccgthebridge.com'
     },
     {
-      icon: 'https://static.codia.ai/custom_image/2025-06-29/070305/location-pin-icon.svg',
+      icon: '/icons/location-pin-icon.svg',
       text: 'Lagos Airport Hotel, Ikeja.'
     }
   ]
 
   const socialLinks = [
     {
-      icon: 'https://static.codia.ai/custom_image/2025-06-29/070305/social-icon-1.svg',
+      icon: '/icons/social-icon-1.svg',
       href: '#'
     },
     {
-      icon: 'https://static.codia.ai/custom_image/2025-06-29/070305/social-icon-2.svg',
+      icon: '/icons/social-icon-2.svg',
       href: '#'
     },
     {
-      icon: 'https://static.codia.ai/custom_image/2025-06-29/070305/social-icon-3.svg',
+      icon: '/icons/social-icon-3.svg',
       href: '#'
     }
   ]
